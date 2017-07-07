@@ -1,6 +1,6 @@
 {
   "name": "warframe-updates",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Checks for patch deployments in Warframe.",
   "main": "index.js",
   "scripts": {
