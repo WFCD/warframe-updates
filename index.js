@@ -44,13 +44,23 @@ class Update extends EventEmitter {
         if (!this.title) {
             this.title = title
             this.version = version
+            this.link = news.link
+            this.image = news.imageLink
+            this.date = news.date
         }
         else if (title !== this.title) {
             this.title = title
             this.version = version
+            this.link = news.link
+            this.image = news.imageLink
+            this.date = news.date
+
             this.emit("update", {
                 title: title,
-                version: version
+                version: version,
+                link = news.link,
+                image = news.imageLink,
+                date = news.date
             })
         }
     }
