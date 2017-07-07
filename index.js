@@ -6,7 +6,7 @@ class Update extends EventEmitter {
     constructor(options = {interval: 60000}) {
         super()
         this.refresh() // Get current version immediately
-        setInterval(this.refresh, options.interval)
+        setInterval(() => this.refresh(), options.interval)
     }
 
     refresh() {
@@ -66,4 +66,4 @@ class Update extends EventEmitter {
     }
 }
 
-module.exports = Update
+module.exports = new Update
