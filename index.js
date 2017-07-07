@@ -66,4 +66,4 @@ class Update extends EventEmitter {
     }
 }
 
-module.exports = new Update
+module.exports = Update
