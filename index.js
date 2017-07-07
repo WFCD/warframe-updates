@@ -58,9 +58,9 @@ class Update extends EventEmitter {
             this.emit("update", {
                 title: title,
                 version: version,
-                link = news.link,
-                image = news.imageLink,
-                date = news.date
+                link: news.link,
+                image: news.imageLink,
+                date: news.date
             })
         }
     }
