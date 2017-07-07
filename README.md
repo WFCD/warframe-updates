@@ -1,6 +1,8 @@
 # warframe-updates
 Get notified whenever a new patch deploys.
 
+[![Supported by Warframe Community Developers](https://raw.githubusercontent.com/Warframe-Community-Developers/banner/master/banner.png)](https://github.com/WFCD "Supported by Warframe Community Developers")
+
 <br>
 
 ## Installation
@@ -34,7 +36,7 @@ warframeVersion.on("update", update => {
 <br>
 
 ## Options
-Modify functionality like this
+Modify options like this
 ```js
 const WarframeVersion = require("warframe-updates")
 const warframeVersion = new WarframeVersion({
