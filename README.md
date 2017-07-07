@@ -34,7 +34,7 @@ warframeVersion.on("update", update => {
 <br>
 
 ## Options
-Modify functionality like this
+Modify options like this
 ```js
 const WarframeVersion = require("warframe-updates")
 const warframeVersion = new WarframeVersion({
