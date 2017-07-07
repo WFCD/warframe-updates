@@ -1,0 +1,22 @@
+{
+  "name": "warframe-updates",
+  "version": "1.0.0",
+  "description": "Checks for patch deployments in Warframe.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wfcd/warframe-updates.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wfcd/warframe-updates/issues"
+  },
+  "homepage": "https://github.com/wfcd/warframe-updates#readme",
+  "dependencies": {
+    "warframe-worldstate-parser": "^1.7.6"
+  }
+}
