@@ -1,31 +1,24 @@
 const EventEmitter = require("events")
-const http = require("http")
+const request = require("request-promise")
 const WorldState = require("warframe-worldstate-parser")
 
 class Update extends EventEmitter {
-    constructor(options = {interval: 60000}) {
+    constructor(options = {
+        interval: 60000
+    }) {
         super()
         this.refresh() // Get current version immediately
         setInterval(() => this.refresh(), options.interval)
     }
 
     refresh() {
-        this.getWorldState().then(res => {
-            this.getUpdates(new WorldState(res))
-        })
-    }
-
-    getWorldState() {
-        return new Promise((resolve, reject) => {
-            http.get({
-                host: "content.warframe.com",
-                path: "/dynamic/worldState.php"
-            }, (res) => {
-                let body = ""
-                res.on("data", chunk => body += chunk)
-                res.on("end", () => resolve(body))
+        request.get("http://content.warframe.com/dynamic/worldState.php")
+            .then(res => {
+                this.getUpdates(new WorldState(res))
             })
-        })
+            .catch(err => {
+
+            })
     }
 
     getUpdates(ws) {
@@ -47,8 +40,7 @@ class Update extends EventEmitter {
             this.link = news.link
             this.image = news.imageLink
             this.date = news.date
-        }
-        else if (title !== this.title) {
+        } else if (title !== this.title) {
             this.title = title
             this.version = version
             this.link = news.link

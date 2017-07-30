@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/wfcd/warframe-updates#readme",
   "dependencies": {
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
     "warframe-worldstate-parser": "^1.7.6"
   }
 }
