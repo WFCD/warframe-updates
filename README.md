@@ -1,7 +1,7 @@
 # warframe-updates
 Get notified whenever a new patch deploys.
 
-[![Supported by Warframe Community Developers](https://raw.githubusercontent.com/Warframe-Community-Developers/banner/master/banner.png)](https://github.com/WFCD "Supported by Warframe Community Developers")
+[![Supported by Warframe Community Developers](https://warframestat.us/wfcd.png)](https://github.com/WFCD "Supported by Warframe Community Developers")
 
 <br>
 
