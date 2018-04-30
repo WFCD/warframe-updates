@@ -4,7 +4,7 @@
   "description": "Checks for patch deployments in Warframe.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "exit 0"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/wfcd/warframe-updates#readme",
   "dependencies": {
+    "greenkeeper-lockfile": "^1.14.0",
     "request": "^2.81.0",
     "request-promise": "^4.2.1",
     "warframe-worldstate-data": "0.0.3",
