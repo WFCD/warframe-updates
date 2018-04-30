@@ -18,8 +18,8 @@
   "homepage": "https://github.com/wfcd/warframe-updates#readme",
   "dependencies": {
     "greenkeeper-lockfile": "^1.14.0",
-    "request": "^2.81.0",
-    "request-promise": "^4.2.1",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2",
     "warframe-worldstate-data": "0.0.3",
     "warframe-worldstate-parser": "^1.7.6"
   }
